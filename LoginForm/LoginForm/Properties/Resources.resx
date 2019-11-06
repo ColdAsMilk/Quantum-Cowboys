@@ -121,4 +121,7 @@
   <data name="Hat_Cowboy_Guy_Face_Avatar-512" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Hat_Cowboy_Guy_Face_Avatar-512.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="vector-desert-landscape-cowboy-on-260nw-1090353176" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\vector-desert-landscape-cowboy-on-260nw-1090353176.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

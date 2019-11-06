@@ -69,5 +69,15 @@ namespace LoginForm.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap vector_desert_landscape_cowboy_on_260nw_1090353176 {
+            get {
+                object obj = ResourceManager.GetObject("vector-desert-landscape-cowboy-on-260nw-1090353176", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
