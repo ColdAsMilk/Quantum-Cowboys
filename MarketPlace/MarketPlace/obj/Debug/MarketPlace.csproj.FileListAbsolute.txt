@@ -1,0 +1,11 @@
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\bin\Debug\MarketPlace.exe.config
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\bin\Debug\MarketPlace.exe
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\bin\Debug\MarketPlace.pdb
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.csprojAssemblyReference.cache
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.Bounties.resources
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.MarketPlace.resources
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.Properties.Resources.resources
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.csproj.GenerateResource.cache
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.csproj.CoreCompileInputs.cache
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.exe
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.pdb
