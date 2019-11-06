@@ -2,7 +2,6 @@ C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\bin\Debug\Lo
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\bin\Debug\LoginForm.exe
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\bin\Debug\LoginForm.pdb
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.csprojAssemblyReference.cache
-C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.Form1.resources
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.Properties.Resources.resources
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.GenerateResource.cache
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.CoreCompileInputs.cache
@@ -68,3 +67,4 @@ C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\bin\Debug\zh
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\bin\Debug\zh-Hant\Microsoft.Build.resources.dll
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.exe.config
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.CopyComplete
+C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.LogIn.resources
