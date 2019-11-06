@@ -83,17 +83,21 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("OCR A Extended", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(143, 117);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(222, 22);
+            this.textBox1.Size = new System.Drawing.Size(222, 21);
             this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "Enter Username";
             // 
             // textBox2
             // 
+            this.textBox2.Font = new System.Drawing.Font("OCR A Extended", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.Location = new System.Drawing.Point(143, 161);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(222, 22);
+            this.textBox2.Size = new System.Drawing.Size(222, 21);
             this.textBox2.TabIndex = 2;
+            this.textBox2.Text = "Enter Password";
             // 
             // button1
             // 
