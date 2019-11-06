@@ -16,5 +16,10 @@ namespace LoginForm
         {
             InitializeComponent();
         }
+
+        private void BtnBounties_Click(object sender, EventArgs e)
+        {
+            new Bounties().ShowDialog();
+        }
     }
 }
