@@ -68,3 +68,6 @@ C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\bin\Debug\zh
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.exe.config
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.csproj.CopyComplete
 C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.LogIn.resources
+C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.Bounties.resources
+C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.MarketPlace.resources
+C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\obj\Debug\LoginForm.Registration.resources
