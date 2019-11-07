@@ -59,5 +59,17 @@ namespace LoginForm
         {
             txtUsername.Text = txtPassword.Text = txtConfirmPassword.Text = "";
         }
+
+        private void LabelRegistration_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            LogIn objFrmMain = new LogIn();
+            this.Hide();
+            objFrmMain.Show();
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

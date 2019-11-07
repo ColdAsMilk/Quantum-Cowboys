@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnPostBounty = new System.Windows.Forms.Button();
             this.btnForward = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.lblPageCtr = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Khaki;
+            this.panel1.Controls.Add(this.btnPostBounty);
             this.panel1.Controls.Add(this.btnForward);
             this.panel1.Controls.Add(this.btnBack);
             this.panel1.Controls.Add(this.lblPageCtr);
@@ -65,11 +67,20 @@
             this.panel1.Controls.Add(this.lblSearch);
             this.panel1.Controls.Add(this.txtSearch);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(60, 3);
+            this.panel1.Location = new System.Drawing.Point(14, 13);
             this.panel1.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(664, 450);
+            this.panel1.Size = new System.Drawing.Size(692, 450);
             this.panel1.TabIndex = 5;
+            // 
+            // btnPostBounty
+            // 
+            this.btnPostBounty.Location = new System.Drawing.Point(3, 419);
+            this.btnPostBounty.Name = "btnPostBounty";
+            this.btnPostBounty.Size = new System.Drawing.Size(156, 28);
+            this.btnPostBounty.TabIndex = 12;
+            this.btnPostBounty.Text = "Post Bounty";
+            this.btnPostBounty.UseVisualStyleBackColor = true;
             // 
             // btnForward
             // 
@@ -79,6 +90,7 @@
             this.btnForward.TabIndex = 11;
             this.btnForward.Text = ">";
             this.btnForward.UseVisualStyleBackColor = true;
+            this.btnForward.Click += new System.EventHandler(this.BtnForward_Click_1);
             // 
             // btnBack
             // 
@@ -88,6 +100,7 @@
             this.btnBack.TabIndex = 10;
             this.btnBack.Text = "<";
             this.btnBack.UseVisualStyleBackColor = true;
+            this.btnBack.Click += new System.EventHandler(this.BtnBack_Click_1);
             // 
             // lblPageCtr
             // 
@@ -104,6 +117,7 @@
             this.pictureBox4.Location = new System.Drawing.Point(380, 251);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox4.TabIndex = 8;
             this.pictureBox4.TabStop = false;
             // 
@@ -112,6 +126,7 @@
             this.pictureBox5.Location = new System.Drawing.Point(224, 251);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 7;
             this.pictureBox5.TabStop = false;
             // 
@@ -120,6 +135,7 @@
             this.pictureBox6.Location = new System.Drawing.Point(68, 251);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox6.TabIndex = 6;
             this.pictureBox6.TabStop = false;
             // 
@@ -128,6 +144,7 @@
             this.pictureBox3.Location = new System.Drawing.Point(380, 95);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
             // 
@@ -136,6 +153,7 @@
             this.pictureBox2.Location = new System.Drawing.Point(224, 95);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 4;
             this.pictureBox2.TabStop = false;
             // 
@@ -144,6 +162,7 @@
             this.pictureBox1.Location = new System.Drawing.Point(68, 95);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(150, 150);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
@@ -180,10 +199,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 480);
             this.Controls.Add(this.panel1);
             this.Name = "Bounties";
-            this.Text = "Form1";
+            this.Text = "Bounties";
+            this.Load += new System.EventHandler(this.Bounties_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -198,7 +218,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        public System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnPostBounty;
         private System.Windows.Forms.Button btnForward;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Label lblPageCtr;

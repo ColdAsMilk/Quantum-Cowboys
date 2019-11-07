@@ -118,7 +118,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImage = global::LoginForm.Properties.Resources.Hat_Cowboy_Guy_Face_Avatar_512;
             this.pictureBox1.Image = global::LoginForm.Properties.Resources.Hat_Cowboy_Guy_Face_Avatar_512;
             this.pictureBox1.Location = new System.Drawing.Point(193, 17);
             this.pictureBox1.Name = "pictureBox1";

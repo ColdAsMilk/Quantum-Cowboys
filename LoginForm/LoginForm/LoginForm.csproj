@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -73,16 +73,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Database1DataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Database1DataSet.xsd</DependentUpon>
-    </Compile>
     <Compile Include="Bounties.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Bounties.Designer.cs">
       <DependentUpon>Bounties.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database1DataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="LogIn.cs">
       <SubType>Form</SubType>
@@ -95,6 +95,17 @@
     </Compile>
     <Compile Include="MarketPlace.Designer.cs">
       <DependentUpon>MarketPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostBounty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostBounty.Designer.cs">
+      <DependentUpon>PostBounty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Registration.cs">
       <SubType>Form</SubType>
@@ -113,19 +124,21 @@
     <EmbeddedResource Include="MarketPlace.resx">
       <DependentUpon>MarketPlace.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PostBounty.resx">
+      <DependentUpon>PostBounty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="Registration.resx">
       <DependentUpon>Registration.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include=".vs\ProjectSettings.json" />
+    <None Include=".vs\slnx.sqlite" />
+    <None Include=".vs\VSWorkspaceState.json" />
+    <None Include="bin\Debug\LoginForm.exe.config" />
     <None Include="Database1DataSet.xsc">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </None>
@@ -154,6 +167,71 @@
     <None Include="Resources\Hat_Cowboy_Guy_Face_Avatar-512.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bin\Debug\cs\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\Database1.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\Database1_log.ldf">
+      <DependentUpon>Database1.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="bin\Debug\de\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\EnvDTE.dll" />
+    <Content Include="bin\Debug\en\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\es\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\fr\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\Hyak.Common.dll" />
+    <Content Include="bin\Debug\it\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\ja\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\ko\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\LoginForm.exe" />
+    <Content Include="bin\Debug\LoginForm.pdb" />
+    <Content Include="bin\Debug\Microsoft.Azure.Common.dll" />
+    <Content Include="bin\Debug\Microsoft.Azure.Common.NetFramework.dll" />
+    <Content Include="bin\Debug\Microsoft.Azure.Management.Sql.dll" />
+    <Content Include="bin\Debug\Microsoft.Azure.ResourceManager.dll" />
+    <Content Include="bin\Debug\Microsoft.Build.dll" />
+    <Content Include="bin\Debug\Microsoft.Build.Framework.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.Tools.Components.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.Tools.Design.Core.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTesting.dll" />
+    <Content Include="bin\Debug\Microsoft.Data.Tools.Schema.Sql.UnitTestingAdapter.dll" />
+    <Content Include="bin\Debug\Microsoft.MSXML.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.ConnectionDlg.AadAuthenticationProvider.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.ConnectionDlg.Core.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.ConnectionDlg.UI.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.ConnectionDlg.VS.Azure.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.ConnectionDlg.VS.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.Data.Tools.ExceptionMessageBox.dll" />
+    <Content Include="bin\Debug\Microsoft.SqlServer.Tools.Extensibility.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.ComponentModelHost.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Data.Tools.Interfaces.1.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Data.Tools.Package.SqlProfile.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Data.Tools.SqlObjectExplorer.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.GraphModel.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.ProjectAggregator.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.15.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Framework.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.10.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.9.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll" />
+    <Content Include="bin\Debug\Microsoft.VisualStudio.VSHelp.dll" />
+    <Content Include="bin\Debug\Newtonsoft.Json.dll" />
+    <Content Include="bin\Debug\pl\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\pt-BR\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\ru\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\stdole.dll" />
+    <Content Include="bin\Debug\System.Collections.Immutable.dll" />
+    <Content Include="bin\Debug\System.Threading.Tasks.Dataflow.dll" />
+    <Content Include="bin\Debug\tr\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\VSLangProj.dll" />
+    <Content Include="bin\Debug\zh-Hans\Microsoft.Build.resources.dll" />
+    <Content Include="bin\Debug\zh-Hant\Microsoft.Build.resources.dll" />
     <Content Include="Database1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
@@ -174,6 +252,10 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".vs\LoginForm\v16\" />
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

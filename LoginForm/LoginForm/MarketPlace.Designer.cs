@@ -28,25 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
             this.btnBounties = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Khaki;
-            this.panel1.Controls.Add(this.btnBounties);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(52, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(697, 450);
-            this.panel1.TabIndex = 5;
-            // 
             // btnBounties
             // 
-            this.btnBounties.Location = new System.Drawing.Point(221, 136);
+            this.btnBounties.Location = new System.Drawing.Point(212, 148);
             this.btnBounties.Name = "btnBounties";
             this.btnBounties.Size = new System.Drawing.Size(104, 41);
             this.btnBounties.TabIndex = 1;
@@ -64,6 +54,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Quantum Cowboys Marketplace";
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Khaki;
+            this.panel1.Controls.Add(this.btnBounties);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(685, 450);
+            this.panel1.TabIndex = 4;
+            // 
             // MarketPlace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -71,7 +71,8 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.panel1);
             this.Name = "MarketPlace";
-            this.Text = "Form2";
+            this.Text = "MarketPlace";
+            this.Load += new System.EventHandler(this.MarketPlace_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -80,8 +81,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnBounties;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
     }
 }

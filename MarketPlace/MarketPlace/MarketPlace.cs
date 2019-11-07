@@ -21,5 +21,10 @@ namespace MarketPlace
         {
             new Bounties().ShowDialog();
         }
+
+        private void MarketPlace_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -40,7 +40,7 @@
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(65, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(445, 29);
+            this.label1.Size = new System.Drawing.Size(582, 35);
             this.label1.TabIndex = 0;
             this.label1.Text = "Quantum Cowboys Marketplace";
             // 
@@ -66,7 +66,7 @@
             // 
             // MarketPlace
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(624, 471);
             this.Controls.Add(this.panel1);
@@ -74,6 +74,7 @@
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "MarketPlace";
             this.Text = "MarketPlace";
+            this.Load += new System.EventHandler(this.MarketPlace_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

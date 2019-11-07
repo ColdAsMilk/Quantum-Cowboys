@@ -123,5 +123,60 @@ namespace MarketPlace
         {
             new PostBounty().ShowDialog();
         }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblSearch_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtSearch_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PictureBox6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LblPageCtr_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
