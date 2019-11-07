@@ -20,7 +20,7 @@ namespace LoginForm
         private void Button1_Click(object sender, EventArgs e)
         {
             //Creating instance of database, connecting to it and taking the username and password values
-            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\Database1.mdf;Integrated Security=True");
+            SqlConnection sqlcon = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\Database1.mdf;Integrated Security=True");
             string query = "Select * from LoginInfo Where username = '" + txtUsername.Text.Trim() + "' and password ='" + txtPassword.Text.Trim() + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, sqlcon);
             DataTable dtbl = new DataTable();
@@ -42,6 +42,16 @@ namespace LoginForm
             Registration objFrmMain = new Registration();
             this.Hide();
             objFrmMain.Show();
+        }
+
+        private void Panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

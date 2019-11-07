@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Security;
 using System.Text;
@@ -13,6 +14,9 @@ namespace LoginForm
 {
     public partial class PostBounty : Form
     {
+        public static string directory = "C:\\Users\\jhcoo\\Documents\\GitHub\\Quantum-Cowboys\\LoginForm\\LoginForm\\bin\\images\\sample1.jpg";
+        public static List<Image> imageList = Directory.GetFiles(directory, "*.jpg", SearchOption.AllDirectories).Select(Image.FromFile).ToList();
+        public string sourceFilePath;
         public PostBounty()
         {
             InitializeComponent();
@@ -30,8 +34,8 @@ namespace LoginForm
             {
                 try
                 {
-                    var filePath = openFileDialog1.FileName;
-                    pictureBox1.Image = Image.FromFile(filePath);
+                    sourceFilePath = openFileDialog1.FileName;
+                    pictureBox1.Image = Image.FromFile(sourceFilePath);
                 }
                 catch (SecurityException ex)
                 {
@@ -101,10 +105,10 @@ namespace LoginForm
             {
                 location = txtLocation.Text;
             }
-            
 
+            imageID = imageList.Count();
 
-
+            System.IO.File.Copy(sourceFilePath, directory + imageID, true);
 
         }
 

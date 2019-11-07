@@ -130,6 +130,12 @@
     <EmbeddedResource Include="MarketPlace.resx">
       <DependentUpon>MarketPlace.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\LoginForm.Bounties.resources" />
+    <EmbeddedResource Include="obj\Debug\LoginForm.LogIn.resources" />
+    <EmbeddedResource Include="obj\Debug\LoginForm.MarketPlace.resources" />
+    <EmbeddedResource Include="obj\Debug\LoginForm.PostBounty.resources" />
+    <EmbeddedResource Include="obj\Debug\LoginForm.Properties.Resources.resources" />
+    <EmbeddedResource Include="obj\Debug\LoginForm.Registration.resources" />
     <EmbeddedResource Include="PostBounty.resx">
       <DependentUpon>PostBounty.cs</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +162,14 @@
     <None Include="Database1DataSet.xss">
       <DependentUpon>Database1DataSet.xsd</DependentUpon>
     </None>
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\LoginForm.csproj.CopyComplete" />
+    <None Include="obj\Debug\LoginForm.csproj.CoreCompileInputs.cache" />
+    <None Include="obj\Debug\LoginForm.csproj.GenerateResource.cache" />
+    <None Include="obj\Debug\LoginForm.csprojAssemblyReference.cache" />
+    <None Include="obj\Debug\LoginForm.exe.config" />
+    <None Include="obj\Release\LoginForm.csproj.CoreCompileInputs.cache" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -245,6 +259,11 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="obj\Debug\LoginForm.csproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\LoginForm.exe" />
+    <Content Include="obj\Debug\LoginForm.pdb" />
+    <Content Include="obj\Debug\TempPE\Database1DataSet.Designer.cs.dll" />
+    <Content Include="obj\Debug\TempPE\Properties.Resources.Designer.cs.dll" />
     <None Include="Resources\vector-desert-landscape-cowboy-on-260nw-1090353176.png" />
   </ItemGroup>
   <ItemGroup>

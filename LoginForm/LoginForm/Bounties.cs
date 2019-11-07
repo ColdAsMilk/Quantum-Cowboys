@@ -15,7 +15,7 @@ namespace LoginForm
     {
         public int ctrPage = 1;
         public int ctrPicture = 0;
-        public static string directory = "C:\\Users\\Kyler\\Documents\\GitHub\\Quantum-Cowboys\\MarketPlace\\MarketPlace\\bin\\images";
+        public static string directory = "C:\\Users\\jhcoo\\Documents\\GitHub\\Quantum-Cowboys\\LoginForm\\LoginForm\\bin\\images\\sample1.jpg";
         public static List<Image> imageList = Directory.GetFiles(directory, "*.jpg", SearchOption.AllDirectories).Select(Image.FromFile).ToList();
         public Bounties()
         {
@@ -190,6 +190,12 @@ namespace LoginForm
             ctrPage--;
             ctrPicture -= 6;
             LoadImageBoxes(imageList);
+        }
+
+        private void BtnPostBounty_Click_1(object sender, EventArgs e)
+        {
+            PostBounty objFrmMain = new PostBounty();
+            objFrmMain.ShowDialog();
         }
     }
 }
