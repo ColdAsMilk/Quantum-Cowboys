@@ -16,12 +16,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Configuration;
 
 namespace LoginForm
 {
     public partial class Registration : Form
-    {
-        String connectionString = @""; //Connection String goes in between the quotes
+    {   //Shoving the connection string into a variable for easier use
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\kyler\Documents\GitHub\Quantum-Cowboys\LoginForm\LoginForm\Database1.mdf;Integrated Security=True";
         public Registration()
         {
             InitializeComponent();
@@ -29,39 +30,34 @@ namespace LoginForm
 
         private void btnSubmit_Click(object sender, EventArgs e)
         {
+            //Checking if the Username or password text fields are empty (They have to have a usernameNPassword)
             if (txtUsername.Text == "" || txtPassword.Text == "")
-                MessageBox.Show("Please Fill Mandatory Fields");
-            else if (txtPassword.Text != txtConfirmPassword.Text)
-            {
-                //!!!!! 
-                // Might not work, just hoping if statements are like Java
-                MessageBox.Show("Error. Please Confirm Password");
-                txtPassword.Text = "";
-                txtConfirmPassword.Text = "";
-            }
+                MessageBox.Show("Please fill fields");
+            else if (txtPassword.Text != txtConfirmPassword.Text) //Checking to see if the password field and confirmation field are matching.
+                MessageBox.Show("Passwords do not match");
             else
             {
-
+                    //Creating instance of connection
                 using (SqlConnection sqlCon = new SqlConnection(connectionString))
                 {
-                    sqlCon.Open();
-                    //Opening the Connection (if im thinking about this right)
-                    SqlCommand sqlcmd = new SqlCommand("", sqlCon); //Table Name goes in, if Im thinking correctly, ask Alec for the video about this
-                    sqlcmd.CommandType = CommandType.StoredProcedure;
-                    // !!!!!
-                    // Needs tweaking from you for the Column(?) Names
-                    sqlcmd.Parameters.AddWithValue("@Username", txtUsername.Text.Trim());
-                    sqlcmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim());
-                    sqlcmd.ExecuteNonQuery();
-                    MessageBox.Show("Registration Compelete, Partner.");
-                    Clear();
+                    sqlCon.Open(); //Opening instance
+                    SqlCommand sqlCmd = new SqlCommand("UserAdd", sqlCon);// Establishing parameters
+                    sqlCmd.CommandType = CommandType.StoredProcedure;
+                    sqlCmd.Parameters.AddWithValue("@UserName", txtUsername.Text.Trim()); //Adding the Username
+                    sqlCmd.Parameters.AddWithValue("@Password", txtPassword.Text.Trim()); //Adding the password
+                    sqlCmd.ExecuteNonQuery(); //Executing the Sql Query connected to the database
+                    MessageBox.Show("Registration Success"); 
+                    
+                    Clear(); //Calls Clear Method
+                    LogIn objFrmMain = new LogIn();
+                    this.Hide();
+                    objFrmMain.Show();
                 }
             }
-
         }
-        void Clear()
+        void Clear() //Resets the textbox fields.
         {
-            txtUsername.Text = txtPassword.Text = "";
+            txtUsername.Text = txtPassword.Text = txtConfirmPassword.Text = "";
         }
     }
 }
