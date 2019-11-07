@@ -26,5 +26,15 @@ namespace LoginForm
         {
 
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            new PostBounty().ShowDialog();
+        }
+
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            new Account().ShowDialog();
+        }
     }
 }
