@@ -52,11 +52,18 @@
     <Compile Include="Bounties.Designer.cs">
       <DependentUpon>Bounties.cs</DependentUpon>
     </Compile>
+    <Compile Include="BountyPerson.cs" />
     <Compile Include="MarketPlace.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MarketPlace.Designer.cs">
       <DependentUpon>MarketPlace.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PostBounty.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PostBounty.Designer.cs">
+      <DependentUpon>PostBounty.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -69,6 +76,9 @@
     <EmbeddedResource Include="MarketPlace.resx">
       <DependentUpon>MarketPlace.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PostBounty.resx">
+      <DependentUpon>PostBounty.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,6 +87,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -90,6 +101,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\sample1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\sample2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\sample3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\sample4.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\sample5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\sample6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\sample7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\images\sample8.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

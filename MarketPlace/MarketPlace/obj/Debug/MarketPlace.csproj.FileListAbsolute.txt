@@ -9,3 +9,4 @@ C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debu
 C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.csproj.CoreCompileInputs.cache
 C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.exe
 C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.pdb
+C:\Users\jhcoo\Documents\GitHub\Quantum-Cowboys\MarketPlace\MarketPlace\obj\Debug\MarketPlace.PostBounty.resources

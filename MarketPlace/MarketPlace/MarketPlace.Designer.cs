@@ -56,7 +56,7 @@
             // 
             // btnBounties
             // 
-            this.btnBounties.Location = new System.Drawing.Point(221, 136);
+            this.btnBounties.Location = new System.Drawing.Point(212, 148);
             this.btnBounties.Name = "btnBounties";
             this.btnBounties.Size = new System.Drawing.Size(104, 41);
             this.btnBounties.TabIndex = 1;
