@@ -62,7 +62,7 @@ a.special:hover { background-color: #f6e17e;
 
 h2 { font-family: ocr a std, monospace; }
 
-	/*Used to center the list on the webpage*/
+/*Used to center the list on the webpage*/
 ol.center { display: inline-block;
 	margin-top: 0px;
 	margin-bottom: 0px;
@@ -73,14 +73,14 @@ ol.center { display: inline-block;
 ol.center1 { display: inline-block;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 95px;
+	padding-left: 93px;
 	}
 
 /*Used to center the list on the webpage*/
 ol.center2 { display: inline-block;
 	margin-top: 0px;
 	margin-bottom: 0px;
-	padding-left: 230px;
+	padding-left: 233px;
 	}
 
 li {padding-bottom: 10px;} 
@@ -90,11 +90,11 @@ li.spacing { padding-right: 170px; }
 
 li.spacing1 { padding-right: 215px; }
 
-li.spacing2 { padding-right: 213px; }
+li.spacing2 { padding-right: 214px; }
 
-li.spacing3 { padding-right: 222px; }
+li.spacing3 { padding-right: 223px; }
 
-li.spacing4 { padding-right: 55px; }
+li.spacing4 { padding-right: 56px; }
 
 li.spacing5 { padding-right: 122px; }
 
@@ -106,7 +106,7 @@ li.spacing8 { padding-right: 0px; }
 
 li.spacing9 { padding-right: 62px; }
 
-li.spacing10 { padding-right: 211px; }
+li.spacing10 { padding-right: 210px; }
 
 li.spacing11 { padding-right: 18px; }
 
