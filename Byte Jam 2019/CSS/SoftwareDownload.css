@@ -1,24 +1,25 @@
 body { text-align: center; 
 	background-color: #603f25;
+	font-family: ocr a std, monospace;
 	}
 	
 header { text-align: center;
-	background-color: #f6e17e;
+	background-color: #f0e68c;
 	color: #cc3226;
 	font-size: 40pt;
-	font-family: arial, courier;
+	font-family: ocr a std, monospace;
 	height: 60px;
 	border: 5px double #edce70;
 	}
 
-#container { background-color: #785635; 
+#container { background-color: #856649; 
 	max-width: 100%;
 	padding: 20px;
 	border: 2.5px dashed #563821;
 	}
 	
 a { text-decoration: none; 
-	font-family: helvetica, verdana;
+	font-family: ocr a std, monospace;
 	color: #cc3226;
 	font-size: 14pt;
 	}
@@ -32,7 +33,7 @@ a:active { box-shadow: 0 0 25px 5px #603f25; }
 a:visited { color: #a3281e; }
 
 nav { padding: 5px;
-	background-color: #f6e17e;
+	background-color: #f0e68c;
 	color: #cc3226;
 	border: 2.5px solid #edce70; 
 	}
@@ -40,8 +41,9 @@ nav { padding: 5px;
 nav ul { list-style-type: none; }
 
 nav li { display: inline;	
-	padding-left: 44px;
-	margin-right: 74px;
+	padding-left: 64px;
+	margin-right: 94px;
+	padding-bottom: 0;
 	}
 	
 a.special { color: #000; 
@@ -50,23 +52,74 @@ a.special { color: #000;
 	}
 	
 a.special:hover { background-color: #f6e17e;
-	text-decoration: underline overline;
+	text-decoration: overline;
 	font-weight: bold;
 	}
 
-#content { background-color: #966c43;
+#content { background-color: #a07a55;
 	border: 5px solid #87613c;
-	height: 350px;
 	}
 
-h2 {margin-top: 0px; /*To help with spacing*/
-	font-family: helvetica, verdana;
+h2 { font-family: ocr a std, monospace; }
+
+	/*Used to center the list on the webpage*/
+ol.center { display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 62px;
 	}
 
-footer { background-color: #f6e17e;
+/*Used to center the list on the webpage*/
+ol.center1 { display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 95px;
+	}
+
+/*Used to center the list on the webpage*/
+ol.center2 { display: inline-block;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 230px;
+	}
+
+li {padding-bottom: 10px;} 
+
+/*li.spacing, li.spacing1, and li.spacing2 are used to align each text in the <li> tags on the webpage*/
+li.spacing { padding-right: 170px; }
+
+li.spacing1 { padding-right: 215px; }
+
+li.spacing2 { padding-right: 213px; }
+
+li.spacing3 { padding-right: 222px; }
+
+li.spacing4 { padding-right: 55px; }
+
+li.spacing5 { padding-right: 211px; }
+
+li.spacing6 { padding-right: 122px; }
+
+li.spacing7 { padding-right: 105px; }
+
+li.spacing8 { padding-right: 282px; }
+
+li.spacing9 { padding-right: 0px; }
+
+li.spacing10 { padding-right: 62px; }
+
+li.spacing11 { padding-right: 211px; }
+
+li.spacing12 { padding-right: 18px; }
+
+li.spacing13 { padding-right: 220px; }
+
+li.spacing14 { padding-right: 194px; }
+
+footer { background-color: #f0e68c;
 	border: 2.5px solid #edce70; 
 	text-align: center;
-	font-family: helvetica, verdana;
+	font-family: ocr a std, monospace;
 	padding: 20px;
 	color: #cc3226; 
 	}
